@@ -12,8 +12,17 @@
                 "https://naga.dmv.nico/htmls/*"
             ],
             "js": [
-                "content.js"
+                "content_script.js"
             ]
         }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
     ]
 }
