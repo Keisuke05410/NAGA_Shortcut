@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "NAGA SHORTCUT",
+    "version": "1.0.0",
+    "description": "Add a shortcut to NAGA on your desktop!",
+    "icons": {
+        "48": "images/naga_shortcut_icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://naga.dmv.nico/htmls/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
